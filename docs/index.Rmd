@@ -1465,7 +1465,7 @@ xyplot(L2Loss ~ Epoch,
 |      **[A.2]** LR_GDA_LLR_HEC : Linear Regression - Gradient Descent Algorithm with Low Learning Rate and High Epoch Count
 |      **[A.3]** LR_GDA_VHLR_HLEC : Linear Regression - Gradient Descent Algorithm with Very High Learning Rate and Low Epoch Count
 |
-| **[A]** The choice of gradient norm minimum threshold for convergence, learning rate and the epoch count in the implementation of the gradient descent algorithm are critical to achieving fully optimized coefficients while maintaining a sensibly minimal cost function.
+| **[B]** The choice of gradient norm minimum threshold for convergence, learning rate and the epoch count in the implementation of the gradient descent algorithm are critical to achieving fully optimized coefficients while maintaining a sensibly minimal cost function.
 |
 ```{r section_1.6, warning=FALSE, message=FALSE}
 ##################################
