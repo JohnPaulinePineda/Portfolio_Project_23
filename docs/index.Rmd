@@ -1110,6 +1110,8 @@ xyplot(L2Loss ~ Epoch,
 
 ###  1.5.4 Linear Regression - Gradient Descent Algorithm with High Learning Rate and Low Epoch Count (LR_GDA_HLR_LEC)
 |
+| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the cost function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the cost function with respect to the parameters for the entire data set. A sufficiently high learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in smaller steps with more risks of not reaching the minimum due to a lower number of iterations.   
+|
 | **[A]** The gradient descent algorithm was implemented with parameter settings described as follows:
 |      **[A.1]** <span style="color: #FF0000">Learning Rate</span> = 100 (High)
 |      **[A.2]** <span style="color: #FF0000">Epochs</span> = 10 (Low)
