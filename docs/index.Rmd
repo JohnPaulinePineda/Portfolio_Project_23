@@ -1667,7 +1667,7 @@ dotplot(LRCoefficientNames ~ LRCoefficients | Group,
 | **[Article]** [Fitting a Model via Closed-form Equations versus Gradient Descent Versus Stochastic Gradient Descent Versus Mini-Batch Learning. What is the Difference?](https://sebastianraschka.com/faq/docs/closed-form-vs-gd.html) by Sebastian Raschka
 | **[Article]** [Gradient Descent Versus Normal Equation For Regression Problems](https://pushkarasharma.github.io/2020/06/27/Gradient_vs_Normal.html) by Pushkara Sharma
 | **[Publication]** [New Methods for the Determination of Comet Orbits](https://www.semanticscholar.org/paper/Nouvelles-m%C3%A9thodes-pour-la-d%C3%A9termination-des-des-Legendre/21c9090e226ab449ffb608ddb2cb925911a61f24) by Adrien-Marie Legendre
-| **[Publication]** [General Method for the Resolution for a System of Simultaneous Equations](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) by Augustine Cauchy
+| **[Publication]** [General Method for the Resolution of a System of Simultaneous Equations](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) by Augustine Cauchy
 | **[Course]** [Applied Data Mining and Statistical Learning](https://online.stat.psu.edu/stat508/) by Penn State Eberly College of Science
 | **[Course]** [Regression Methods](https://online.stat.psu.edu/stat501/) by Penn State Eberly College of Science
 | **[Course]** [Applied Regression Analysis](https://online.stat.psu.edu/stat462/) by Penn State Eberly College of Science
