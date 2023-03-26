@@ -888,7 +888,7 @@ print(LR_NE)
 
 ###  1.5.2 Linear Regression - Gradient Descent Algorithm with Very High Learning Rate and Low Epoch Count (LR_GDA_VHLR_LEC)
 |
-| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the cost function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the cost function with respect to the parameters for the entire data set. A very high learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in larger steps with lesser risks of overshooting the minimum due to a lower number of iterations.  
+| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the loss function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the loss function with respect to the parameters for the entire data set. A very high learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in larger steps with lesser risks of overshooting the minimum due to a lower number of iterations.  
 |
 | **[A]** The gradient descent algorithm was implemented with parameter settings described as follows:
 |      **[A.1]** <span style="color: #FF0000">Learning Rate</span> = 200 (Very High)
@@ -983,7 +983,7 @@ LR_GDA_VHLR_LEC$EstimationMethod <- rep("LR_GDA_VHLR_LEC",nrow(LR_GDA_VHLR_LEC))
 print(LR_GDA_VHLR_LEC)
 
 ##################################
-# Gathering the cost function optimization data
+# Gathering the loss function optimization data
 # for the gradient descent algorithm
 # with very high learning rate and low epoch count
 ##################################
@@ -996,13 +996,13 @@ Method <- LR_GDA_VHLR_LEC_Summary$Method
 (LR_GDA_VHLR_LEC_ConsolidatedSummary <- cbind(L2Loss, Epoch, Method))
 
 ##################################
-# Plotting the cost function optimization data
+# Plotting the loss function optimization data
 # for the gradient descent algorithm
 # with very high learning rate and low epoch count
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_VHLR_LEC_Summary,
-       main = "Cost Function Optimization Profile : LR_GDA_VHLR_LEC",
+       main = "loss function Optimization Profile : LR_GDA_VHLR_LEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1017,7 +1017,7 @@ xyplot(L2Loss ~ Epoch,
 
 ###  1.5.3 Linear Regression - Gradient Descent Algorithm with Very High Learning Rate and High Epoch Count (LR_GDA_VHLR_HEC)
 |
-| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the cost function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the cost function with respect to the parameters for the entire data set. A very high learning rate (also referred to as step size or the alpha) and high epoch count were applied resulting in larger steps with more risks of overshooting the minimum due to a higher number of iterations.   
+| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the loss function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the loss function with respect to the parameters for the entire data set. A very high learning rate (also referred to as step size or the alpha) and high epoch count were applied resulting in larger steps with more risks of overshooting the minimum due to a higher number of iterations.   
 |
 | **[A]** The gradient descent algorithm was implemented with parameter settings described as follows:
 |      **[A.1]** <span style="color: #FF0000">Learning Rate</span> = 200 (Very High)
@@ -1075,7 +1075,7 @@ print(LR_GDA_VHLR_HEC)
 
 
 ##################################
-# Gathering the cost function optimization data
+# Gathering the loss function optimization data
 # for the gradient descent algorithm
 # with very high learning rate and high epoch count
 ##################################
@@ -1088,13 +1088,13 @@ Method <- LR_GDA_VHLR_HEC_Summary$Method
 (LR_GDA_VHLR_HEC_ConsolidatedSummary <- cbind(L2Loss, Epoch, Method))
 
 ##################################
-# Plotting the cost function optimization data
+# Plotting the loss function optimization data
 # for the gradient descent algorithm
 # with very high learning rate and high epoch count
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_VHLR_HEC_Summary,
-       main = "Cost Function Optimization Profile : LR_GDA_VHLR_HEC",
+       main = "loss function Optimization Profile : LR_GDA_VHLR_HEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1109,7 +1109,7 @@ xyplot(L2Loss ~ Epoch,
 
 ###  1.5.4 Linear Regression - Gradient Descent Algorithm with High Learning Rate and Low Epoch Count (LR_GDA_HLR_LEC)
 |
-| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the cost function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the cost function with respect to the parameters for the entire data set. A sufficiently high learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in average steps with more risks of not reaching the minimum due to a lower number of iterations.   
+| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the loss function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the loss function with respect to the parameters for the entire data set. A sufficiently high learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in average steps with more risks of not reaching the minimum due to a lower number of iterations.   
 |
 | **[A]** The gradient descent algorithm was implemented with parameter settings described as follows:
 |      **[A.1]** <span style="color: #FF0000">Learning Rate</span> = 100 (High)
@@ -1166,7 +1166,7 @@ LR_GDA_HLR_LEC$EstimationMethod <- rep("LR_GDA_HLR_LEC",nrow(LR_GDA_HLR_LEC))
 print(LR_GDA_HLR_LEC)
 
 ##################################
-# Gathering the cost function optimization data
+# Gathering the loss function optimization data
 # for the gradient descent algorithm
 # with high learning rate and low epoch count
 ##################################
@@ -1179,13 +1179,13 @@ Method <- LR_GDA_HLR_LEC_Summary$Method
 (LR_GDA_HLR_LEC_ConsolidatedSummary <- cbind(L2Loss, Epoch, Method))
 
 ##################################
-# Plotting the cost function optimization data
+# Plotting the loss function optimization data
 # for the gradient descent algorithm
 # with high learning rate and low epoch count
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_HLR_LEC_Summary,
-       main = "Cost Function Optimization Profile : LR_GDA_HLR_LEC",
+       main = "loss function Optimization Profile : LR_GDA_HLR_LEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1200,7 +1200,7 @@ xyplot(L2Loss ~ Epoch,
 
 ###  1.5.5 Linear Regression - Gradient Descent Algorithm with High Learning Rate and High Epoch Count (LR_GDA_HLR_HEC)
 |
-| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the cost function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the cost function with respect to the parameters for the entire data set. A sufficiently high learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in average steps with lesser risks of not reaching the minimum as compensated by the higher number of iterations.   
+| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the loss function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the loss function with respect to the parameters for the entire data set. A sufficiently high learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in average steps with lesser risks of not reaching the minimum as compensated by the higher number of iterations.   
 |
 | **[A]** The gradient descent algorithm was implemented with parameter settings described as follows:
 |      **[A.1]** <span style="color: #FF0000">Learning Rate</span> = 100 (High)
@@ -1258,7 +1258,7 @@ print(LR_GDA_HLR_HEC)
 
 
 ##################################
-# Gathering the cost function optimization data
+# Gathering the loss function optimization data
 # for the gradient descent algorithm
 # with high learning rate and high epoch count
 ##################################
@@ -1271,13 +1271,13 @@ Method <- LR_GDA_HLR_HEC_Summary$Method
 (LR_GDA_HLR_HEC_ConsolidatedSummary <- cbind(L2Loss, Epoch, Method))
 
 ##################################
-# Plotting the cost function optimization data
+# Plotting the loss function optimization data
 # for the gradient descent algorithm
 # with high learning rate and high epoch count
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_HLR_HEC_Summary,
-       main = "Cost Function Optimization Profile : LR_GDA_HLR_HEC",
+       main = "loss function Optimization Profile : LR_GDA_HLR_HEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1292,7 +1292,7 @@ xyplot(L2Loss ~ Epoch,
 
 ###  1.5.6 Linear Regression - Gradient Descent Algorithm with Low Learning Rate and Low Epoch Count (LR_GDA_LLR_LEC)
 |
-| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the cost function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the cost function with respect to the parameters for the entire data set. A low learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in smaller steps with higher risks of not reaching the minimum due to the smaller number of iterations. 
+| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the loss function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the loss function with respect to the parameters for the entire data set. A low learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in smaller steps with higher risks of not reaching the minimum due to the smaller number of iterations. 
 |
 | **[A]** The gradient descent algorithm was implemented with parameter settings described as follows:
 |      **[A.1]** <span style="color: #FF0000">Learning Rate</span> = 50 (Low)
@@ -1350,7 +1350,7 @@ print(LR_GDA_LLR_LEC)
 
 
 ##################################
-# Gathering the cost function optimization data
+# Gathering the loss function optimization data
 # for the gradient descent algorithm
 # with low learning rate and low epoch count
 ##################################
@@ -1363,13 +1363,13 @@ Method <- LR_GDA_LLR_LEC_Summary$Method
 (LR_GDA_LLR_LEC_ConsolidatedSummary <- cbind(L2Loss, Epoch, Method))
 
 ##################################
-# Plotting the cost function optimization data
+# Plotting the loss function optimization data
 # for the gradient descent algorithm
 # with low learning rate and low epoch count
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_LLR_LEC_Summary,
-       main = "Cost Function Optimization Profile : LR_GDA_LLR_LEC",
+       main = "loss function Optimization Profile : LR_GDA_LLR_LEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1384,7 +1384,7 @@ xyplot(L2Loss ~ Epoch,
 
 ###  1.5.7 Linear Regression - Gradient Descent Algorithm with Low Learning Rate and High Epoch Count (LR_GDA_LLR_HEC)
 |
-| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the cost function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the cost function with respect to the parameters for the entire data set. A low learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in smaller steps with lesser risks of not reaching the minimum as compensated by the smaller number of iterations
+| [Gradient Descent](https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf) minimizes the loss function parameterized by the model's coefficients based on the direction and learning rate factors which determine the partial derivative calculations of future iterations, allowing the algorithm to gradually arrive at the local or global minimum considered the point of convergence. This particular implementation used Batch Gradient Descent which computes the gradient of the loss function with respect to the parameters for the entire data set. A low learning rate (also referred to as step size or the alpha) and low epoch count were applied resulting in smaller steps with lesser risks of not reaching the minimum as compensated by the smaller number of iterations
 |
 | **[A]** The gradient descent algorithm was implemented with parameter settings described as follows:
 |      **[A.1]** <span style="color: #FF0000">Learning Rate</span> = 50 (Low)
@@ -1442,7 +1442,7 @@ print(LR_GDA_LLR_HEC)
 
 
 ##################################
-# Gathering the cost function optimization data
+# Gathering the loss function optimization data
 # for the gradient descent algorithm
 # with low learning rate and high epoch count
 ##################################
@@ -1455,13 +1455,13 @@ Method <- LR_GDA_LLR_HEC_Summary$Method
 (LR_GDA_LLR_HEC_ConsolidatedSummary <- cbind(L2Loss, Epoch, Method))
 
 ##################################
-# Plotting the cost function optimization data
+# Plotting the loss function optimization data
 # for the gradient descent algorithm
 # with low learning rate and high epoch count
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_LLR_HEC_Summary,
-       main = "Cost Function Optimization Profile : LR_GDA_LLR_HEC",
+       main = "loss function Optimization Profile : LR_GDA_LLR_HEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1481,11 +1481,11 @@ xyplot(L2Loss ~ Epoch,
 |      **[A.2]** LR_GDA_LLR_HEC : Linear Regression - Gradient Descent Algorithm with Low Learning Rate and High Epoch Count
 |      **[A.3]** LR_GDA_VHLR_HLEC : Linear Regression - Gradient Descent Algorithm with Very High Learning Rate and Low Epoch Count
 |
-| **[B]** The choice of gradient norm minimum threshold for convergence, learning rate and the epoch count in the implementation of the gradient descent algorithm are critical to achieving fully optimized coefficients while maintaining a sensibly minimal cost function.
+| **[B]** The choice of gradient norm minimum threshold for convergence, learning rate and the epoch count in the implementation of the gradient descent algorithm are critical to achieving fully optimized coefficients while maintaining a sensibly minimal loss function.
 |
 ```{r section_1.6, warning=FALSE, message=FALSE}
 ##################################
-# Consolidating the cost function optimization data
+# Consolidating the loss function optimization data
 # for all gradient descent algorithms
 # with different learning rates and epoch counts
 ##################################
@@ -1509,13 +1509,13 @@ LR_GDA_ConsolidatedSummary$Method <- factor(LR_GDA_ConsolidatedSummary$Method,
                                                        "LR_GDA_VHLR_HEC"))
 
 ##################################
-# Plotting the cost function optimization data
+# Plotting the loss function optimization data
 # for all gradient descent algorithms
 # with different learning rates and epoch counts
 ##################################
 xyplot(L2Loss ~ Epoch | Method,
        data = LR_GDA_ConsolidatedSummary,
-       main = "Cost Function Optimization Profile for Gradient Descent Algorithm with Different Learning Rates and Epoch Counts",
+       main = "loss function Optimization Profile for Gradient Descent Algorithm with Different Learning Rates and Epoch Counts",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
