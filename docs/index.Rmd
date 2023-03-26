@@ -16,7 +16,10 @@ knitr::opts_chunk$set(echo = TRUE, fig.width=15, fig.height=10)
 ```
 # **1. Table of Contents**
 |
-| This document implements the gradient descent algorithm to estimate regression coefficients using various helpful packages in <mark style="background-color: #CCECFF">**R**</mark>.    
+| This document implements the gradient descent algorithm to estimate regression coefficients using various helpful packages in <mark style="background-color: #CCECFF">**R**</mark>. 
+|
+| 
+| Regression coefficients represent the changes in the independent variable which explain the variation of the dependent variable in the model. The methods applied in this study attempt to estimate the unknown model coefficients by optimizing a loss function - that which measures the quality of the estimated parameters based on how well the model-induced scores agree with the ground truth labels in the data set.
 |
 ##  1.1 Sample Data
 |
