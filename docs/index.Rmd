@@ -813,6 +813,8 @@ featurePlot(x = EDA.Predictors.Numeric,
 
 ###  1.5.1 Linear Regression - Normal Equations (LR_NE)
 |
+| [Normal Equations](https://www.semanticscholar.org/paper/Nouvelles-m%C3%A9thodes-pour-la-d%C3%A9termination-des-des-Legendre/21c9090e226ab449ffb608ddb2cb925911a61f24) are a system of equations whose solution is the Ordinary Least Squares (OLS) estimator of the regression coefficients and which are derived from the first-order condition of the least squares minimization problem. These equations are obtained by setting equal to zero the partial derivatives of the sum of squared errors (least squares). This approach is a closed-form solution and a one-step algorithm used to analytically find the coefficients that minimize the loss function.
+|
 | **[A]** Applying normal equations, the estimated linear regression coefficients for the given data are as follows:
 |      **[A.1]** <span style="color: #FF0000">Intercept</span> = -2.71856
 |      **[A.2]** <span style="color: #FF0000">MolWeight</span> = +0.20493
@@ -1648,6 +1650,12 @@ dotplot(LRCoefficientNames ~ LRCoefficients | Group,
 | **[Article]** [Difference Between Backpropagation and Stochastic Gradient Descent](https://machinelearningmastery.com/difference-between-backpropagation-and-stochastic-gradient-descent/) by Jason Brownlee
 | **[Article]** [ML | Normal Equation in Linear Regression](https://www.geeksforgeeks.org/ml-normal-equation-in-linear-regression/) by Geeks For Geeks Team
 | **[Article]** [Derivation of the Normal Equation for Linear Regression](https://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression/) by Eli Bendersky
+| **[Article]** [Normal Equation](http://mlwiki.org/index.php/Normal_Equation) by ML Wiki Team
+| **[Article]** [Normal Equations](https://www.statlect.com/glossary/normal-equations#:~:text=In%20linear%20regression%20analysis%2C%20the%20normal%20equations%20are,first-order%20condition%20of%20the%20Least%20Squares%20minimization%20problem.) by Marco Taboga
+| **[Article]** [Fitting a Model via Closed-form Equations versus Gradient Descent Versus Stochastic Gradient Descent Versus Mini-Batch Learning. What is the Difference?](https://sebastianraschka.com/faq/docs/closed-form-vs-gd.html) by Sebastian Raschka
+| **[Article]** [Gradient Descent Versus Normal Equation For Regression Problems](https://pushkarasharma.github.io/2020/06/27/Gradient_vs_Normal.html) by Pushkara Sharma
+| **[Article]** [Normal Equation](http://mlwiki.org/index.php/Normal_Equation) by ML Wiki Team
+| **[Article]** [Normal Equation](http://mlwiki.org/index.php/Normal_Equation) by ML Wiki Team
 | **[Article]** [Normal Equation](http://mlwiki.org/index.php/Normal_Equation) by ML Wiki Team
 | **[Course]** [Applied Data Mining and Statistical Learning](https://online.stat.psu.edu/stat508/) by Penn State Eberly College of Science
 | **[Course]** [Regression Methods](https://online.stat.psu.edu/stat501/) by Penn State Eberly College of Science
