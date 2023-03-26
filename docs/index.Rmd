@@ -1644,6 +1644,7 @@ dotplot(LRCoefficientNames ~ LRCoefficients | Group,
 | **[Article]** [Gradient Descent Explained Simply with Examples](https://vitalflux.com/gradient-descent-explained-simply-with-examples/) by Ajitesh Kumar
 | **[Article]** [Implementing the Gradient Descent Algorithm in R](https://www.r-bloggers.com/2017/02/implementing-the-gradient-descent-algorithm-in-r/) by Richter Walsh
 | **[Article]** [Regression via Gradient Descent in R](https://www.r-bloggers.com/2011/11/regression-via-gradient-descent-in-r/) by Matt Bogard
+| **[Article]** [Stochastic Gradient Descent](http://optimization.cbe.cornell.edu/index.php?title=Stochastic_gradient_descent) by Jonathon Price, Alfred Wong, Tiancheng Yuan, Joshua Mathew and Taiwo Olorunniwo
 | **[Article]** [Difference Between Batch Gradient Descent and Stochastic Gradient Descent](https://www.geeksforgeeks.org/difference-between-batch-gradient-descent-and-stochastic-gradient-descent/) by Geeks For Geeks Team
 | **[Article]** [Stochastic Gradient Descent Vs Gradient Descent: A Head-To-Head Comparison](https://sdsclub.com/stochastic-gradient-descent-vs-gradient-descent-a-head-to-head-comparison/) by SDS Club Team
 | **[Article]** [Differences Between Gradient, Stochastic and Mini Batch Gradient Descent](https://www.baeldung.com/cs/gradient-stochastic-and-mini-batch) by Baeldung
@@ -1656,7 +1657,7 @@ dotplot(LRCoefficientNames ~ LRCoefficients | Group,
 | **[Article]** [Gradient Descent Versus Normal Equation For Regression Problems](https://pushkarasharma.github.io/2020/06/27/Gradient_vs_Normal.html) by Pushkara Sharma
 | **[Article]** [Normal Equation](http://mlwiki.org/index.php/Normal_Equation) by ML Wiki Team
 | **[Article]** [Normal Equation](http://mlwiki.org/index.php/Normal_Equation) by ML Wiki Team
-| **[Article]** [Normal Equation](http://mlwiki.org/index.php/Normal_Equation) by ML Wiki Team
+| **[Publication]** [New Methods for the Determination of Comet Orbits](https://www.semanticscholar.org/paper/Nouvelles-m%C3%A9thodes-pour-la-d%C3%A9termination-des-des-Legendre/21c9090e226ab449ffb608ddb2cb925911a61f24) by Adrien-Marie Legendre
 | **[Course]** [Applied Data Mining and Statistical Learning](https://online.stat.psu.edu/stat508/) by Penn State Eberly College of Science
 | **[Course]** [Regression Methods](https://online.stat.psu.edu/stat501/) by Penn State Eberly College of Science
 | **[Course]** [Applied Regression Analysis](https://online.stat.psu.edu/stat462/) by Penn State Eberly College of Science
