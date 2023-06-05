@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE, fig.width=15, fig.height=10)
 ```
 # **1. Table of Contents**
 |
-| This document implements the gradient descent algorithm to estimate regression coefficients using various helpful packages in <mark style="background-color: #CCECFF">**R**</mark>. 
+| This project manually implements the **Gradient Descent** algorithm using various helpful packages in <mark style="background-color: #CCECFF">**R**</mark> and evaluates a range of values for the learning rate and epoch count parameters to optimally estimate the coefficients of a linear regression model. The cost function optimization profiles of the different candidate parameter settings were compared, with the resulting estimated coefficients assessed against those obtained using normal equations which served as the reference baseline values.
 |
 | Regression coefficients represent the changes in the independent variable which explain the variation of the dependent variable in the model. The methods applied in this study attempt to estimate the unknown model coefficients by optimizing a loss function - that which measures the quality of the estimated parameters based on how well the model-induced scores agree with the ground truth labels in the data set.
 |
@@ -1477,11 +1477,11 @@ xyplot(L2Loss ~ Epoch,
 ##  1.6 Linear Regression Model Coefficient Estimation Evaluation Summary
 |
 | **[A]** The gradient descent algorithms with sufficiently comparable coefficients with the baseline despite not achieving fully optimized coefficients are as follows:
-|      **[A.1]** LR_GDA_HLR_HEC : Linear Regression - Gradient Descent Algorithm with High Learning Rate and High Epoch Count
-|      **[A.2]** LR_GDA_LLR_HEC : Linear Regression - Gradient Descent Algorithm with Low Learning Rate and High Epoch Count
-|      **[A.3]** LR_GDA_VHLR_HLEC : Linear Regression - Gradient Descent Algorithm with Very High Learning Rate and Low Epoch Count
+|      **[A.1]** **LR_GDA_HLR_HEC : Linear Regression - Gradient Descent Algorithm with High Learning Rate and High Epoch Count**
+|      **[A.2]** **LR_GDA_LLR_HEC : Linear Regression - Gradient Descent Algorithm with Low Learning Rate and High Epoch Count**
+|      **[A.3]** **LR_GDA_VHLR_HLEC : Linear Regression - Gradient Descent Algorithm with Very High Learning Rate and Low Epoch Count**
 |
-| **[B]** The choice of gradient norm minimum threshold for convergence, learning rate and the epoch count in the implementation of the gradient descent algorithm are critical to achieving fully optimized coefficients while maintaining a sensibly minimal loss function.
+| **[B]** The choice of **Gradient Norm Minimum Threshold for Convergence**, **Learning Rate** and **Epoch Count** in the implementation of the gradient descent algorithm are critical to achieving fully optimized coefficients while maintaining a sensibly minimal loss function.
 |
 ```{r section_1.6, warning=FALSE, message=FALSE}
 ##################################
