@@ -1620,7 +1620,7 @@ LR_GDA_ConsolidatedSummary$Method <- factor(LR_GDA_ConsolidatedSummary$Method,
 ##################################
 xyplot(L2Loss ~ Epoch | Method,
        data = LR_GDA_ConsolidatedSummary,
-       main = "loss function Optimization Profile for Gradient Descent Algorithm with Different Learning Rates and Epoch Counts",
+       main = "Loss Function Optimization Profile for Gradient Descent Algorithm with Different Learning Rates and Epoch Counts",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
