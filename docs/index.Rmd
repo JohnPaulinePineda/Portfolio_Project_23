@@ -1071,7 +1071,7 @@ Method <- LR_GDA_VHLR_LEC_Summary$Method
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_VHLR_LEC_Summary,
-       main = "loss function Optimization Profile : LR_GDA_VHLR_LEC",
+       main = "Loss Function Optimization Profile : LR_GDA_VHLR_LEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1169,7 +1169,7 @@ Method <- LR_GDA_VHLR_HEC_Summary$Method
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_VHLR_HEC_Summary,
-       main = "loss function Optimization Profile : LR_GDA_VHLR_HEC",
+       main = "Loss Function Optimization Profile : LR_GDA_VHLR_HEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1266,7 +1266,7 @@ Method <- LR_GDA_HLR_LEC_Summary$Method
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_HLR_LEC_Summary,
-       main = "loss function Optimization Profile : LR_GDA_HLR_LEC",
+       main = "Loss Function Optimization Profile : LR_GDA_HLR_LEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1364,7 +1364,7 @@ Method <- LR_GDA_HLR_HEC_Summary$Method
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_HLR_HEC_Summary,
-       main = "loss function Optimization Profile : LR_GDA_HLR_HEC",
+       main = "Loss Function Optimization Profile : LR_GDA_HLR_HEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1462,7 +1462,7 @@ Method <- LR_GDA_LLR_LEC_Summary$Method
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_LLR_LEC_Summary,
-       main = "loss function Optimization Profile : LR_GDA_LLR_LEC",
+       main = "Loss Function Optimization Profile : LR_GDA_LLR_LEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
@@ -1560,7 +1560,7 @@ Method <- LR_GDA_LLR_HEC_Summary$Method
 ##################################
 xyplot(L2Loss ~ Epoch,
        data = LR_GDA_LLR_HEC_Summary,
-       main = "loss function Optimization Profile : LR_GDA_LLR_HEC",
+       main = "Loss Function Optimization Profile : LR_GDA_LLR_HEC",
        ylab = "L2 Loss",
        xlab = "Epoch",
        type=c("p"),
