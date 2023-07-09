@@ -1,5 +1,5 @@
 ---
-title: 'R : Implementing Gradient Descent Algorithm in Estimating Regression Coefficients'
+title: 'Supervised Learning : Implementing Gradient Descent Algorithm in Estimating Regression Coefficients'
 author: "John Pauline Pineda"
 date: "January 6, 2023"
 output: 
